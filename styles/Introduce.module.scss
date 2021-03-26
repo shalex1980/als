@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+.introduce {
+    background: $bg_light;
+
+    p{ 
+        color: $col_dark;
+    }
+}

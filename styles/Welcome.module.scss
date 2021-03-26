@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+.welcome {
+    
+    height: calc(100vh - 120px);
+    //padding: 50px 40;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/slide-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_title {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 4rem;
+    }
+    
+    &_subtitl {
+        color: grey;
+    }
+}

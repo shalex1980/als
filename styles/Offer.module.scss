@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+.offer {
+    background: $bg_dark;
+    color: $col_light;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.article {
+    width: 30%;
+    padding: 20px;
+    border: solid 1px black;
+}

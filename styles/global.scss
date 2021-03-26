@@ -1,0 +1,55 @@
+@import './variables.scss';
+@import './bootstrap.scss';
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 15px 70px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 2.125rem;
+  font-family: $font_monts;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.title {
+  margin: 0 0 25px 0;
+  font-family: $font_monts;
+  font-size: 3.125rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: $font_monts;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.item {
+  padding: 10px 30px 10px 0;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-family: $font_monts;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(116, 116, 119);
+
+  &:hover {
+    color:rgb(30, 30, 31);
+  }
+}
+
+p {
+  font-family: $font_ralew;
+  font-size: 1.2rem;
+  line-height: 29px;
+}
