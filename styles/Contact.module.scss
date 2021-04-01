@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+.contact {
+    background: $bg_dark;
+    color: $col_light;
+}
+.title {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
