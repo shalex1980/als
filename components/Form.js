@@ -1,6 +1,17 @@
 import { useState } from 'react'
 import styles from '../styles/Form.module.scss'
 
+const fetching = ( obj) => {
+  fetch('http://localhost:3000/api/post',{
+    method: 'POST',
+    body: JSON.stringify(obj),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+
+  })
+} 
+
 const defaultForm = { 
   name: "",
   email: "",
@@ -29,7 +40,9 @@ const Form = () => {
     if(!empty.send) return
     console.log("SEND")
 
-    setForm(defaultForm)
+    fetching(form)
+
+    //setForm(defaultForm)
   }
 
   const checkEmpty = () => {

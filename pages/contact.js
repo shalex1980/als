@@ -1,16 +1,6 @@
 import Form from '../components/Form'
 import company from '../data/company.json'
 import styles from '../styles/Contact.module.scss'
-import fs from 'fs'
-
-export async function getStaticprops() {
-  try {
-    const data = fs.writeFileSync('./data/test.txt', content)
-    //file written successfully
-    } catch (err) {
-    console.error(err)
-    }
-}
 
 
 const Contact = () => {

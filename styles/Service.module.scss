@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+.services_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service {
+    position: relative;
+    width: 29%;
+    margin: 20px;
+    border: solid 1px black;
+    border-radius: 4px;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    h4 {
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        text-align: center;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+        border: solid 1px red;
+    }
+}
+
+.image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
