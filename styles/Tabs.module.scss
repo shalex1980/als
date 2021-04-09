@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+.tabs {
+  border: solid 1px black;  
+}
+.app_tabs {
+    padding: 10px;
+    color: #fff;
+    background: rgb(83, 69, 69);
+}
+.tab {
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.tabpanel {
+    padding: 40px;
+    color: #fff;
+    background: grey;
+    border: solid 1px blue;
+}

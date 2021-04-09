@@ -1,9 +1,10 @@
-import SimpleTabs from './SimpleTabs'
+import Tabs from './Tabs'
 
 const Service = (props) => {
     return (
         <article>
-            <SimpleTabs services={props.services} />
+            Service
+            <Tabs />
         </article>
     )
 }
