@@ -1,32 +1,38 @@
 [
     {
-        "title": "PROTECTION",
-        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding design ideas and solutions for any project we’re working on… ",
+        "title": "Content <br/>Management",
+        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding ....",
+        "fullText":"Designing sustainable, high-performance buildings requires an integration of architectural and engineered systems into a balanced design of sustainability and cost-effectiveness. Archus merges these practices with the unique requirements and guidelines necessary for advanced technology facilities.",
         "img": "/images/services/sticky.jpg"
     },
     {
-        "title":"BRANDING",
-        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding design ideas and solutions for any project we’re working on… ",
-        "img": "/images/services/graphic.jpg"
+        "title":"Brand Protection",
+        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding ....",
+        "fullText":"Designing sustainable, high-performance buildings requires an integration of architectural and engineered systems into a balanced design of sustainability and cost-effectiveness. Archus merges these practices with the unique requirements and guidelines necessary for advanced technology facilities.",
+        "img": "/images/services/sticky.jpg"
     },
     {
         "title": "MARKETING",
-        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding design ideas and solutions for any project we’re working on… ",
-        "img": "/images/services/webcode.jpg"
+        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding ....",
+        "fullText":"Designing sustainable, high-performance buildings requires an integration of architectural and engineered systems into a balanced design of sustainability and cost-effectiveness. Archus merges these practices with the unique requirements and guidelines necessary for advanced technology facilities.",
+        "img": "/images/services/sticky.jpg"
     },
     {
-        "title": "MAPPING",
-        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding design ideas and solutions for any project we’re working on… ",
-        "img": "/images/services/business.jpg"
+        "title": "Digital Marketing",
+        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding ....",
+        "fullText":"Designing sustainable, high-performance buildings requires an integration of architectural and engineered systems into a balanced design of sustainability and cost-effectiveness. Archus merges these practices with the unique requirements and guidelines necessary for advanced technology facilities.",
+        "img": "/images/services/sticky.jpg"
     },
     {
-        "title": "ADS",
-        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding design ideas and solutions for any project we’re working on… ",
-        "img": "/images/services/money.jpg"
+        "title": "Advertising & Promotion",
+        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding ....",
+        "fullText":"Designing sustainable, high-performance buildings requires an integration of architectural and engineered systems into a balanced design of sustainability and cost-effectiveness. Archus merges these practices with the unique requirements and guidelines necessary for advanced technology facilities.",
+        "img": "/images/services/sticky.jpg"
     },
     {
-        "title": "SUPPORT",
-        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding design ideas and solutions for any project we’re working on… ",
+        "title": "Customer Support",
+        "text": "All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding ....",
+        "fullText":"Designing sustainable, high-performance buildings requires an integration of architectural and engineered systems into a balanced design of sustainability and cost-effectiveness. Archus merges these practices with the unique requirements and guidelines necessary for advanced technology facilities.",
         "img": "/images/services/sticky.jpg"
     }
 ]

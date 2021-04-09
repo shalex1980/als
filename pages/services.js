@@ -7,9 +7,7 @@ const Services = () => {
       <section className={styles.services}>
         <div className="container">
           <h3 className="title">Services</h3>
-          <div className={styles.services_wrap}>
-            {services.map((item, i) => <Service key={i} {...item} /> )}
-          </div>
+          <Service services={services} />
         </div>
       </section>
     )
