@@ -14,3 +14,11 @@
     padding: 20px;
     border: solid 1px black;
 }
+.offer_list {
+    //list-style-type: none;
+    list-style: square outside;
+    font-size: 1.4rem;
+    li {
+        padding: 5px 0;
+    }
+}

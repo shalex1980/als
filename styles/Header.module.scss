@@ -6,7 +6,10 @@
   padding: 23px 0 23px;
   background: #fff;
     
-    
+   a {
+     color: inherit;
+     text-decoration: none;
+   } 
 }
 .container {
     padding: 0;

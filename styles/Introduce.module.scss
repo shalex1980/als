@@ -7,3 +7,19 @@
         color: $col_dark;
     }
 }
+.sub_title {
+    padding-right: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+.success {
+    display: flex;
+
+    article {
+        width: 45%;
+    }
+}
+.img {
+    border-radius: 6px;
+}

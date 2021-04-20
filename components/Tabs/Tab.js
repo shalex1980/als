@@ -1,10 +1,16 @@
 import styles from '../../styles/Tabs.module.scss'
 
 const Tab = (props) => {
+    const { index , setActiv } = props
+    const handleClick = () => {
+      setActiv(index)
+    }
     return (
-        <button className={styles.tab}>
+        <div className={styles.tab}
+          onClick={handleClick}
+        >
           {props.children}
-        </button>
+        </div>
     )
 }
 

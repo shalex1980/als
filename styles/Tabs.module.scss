@@ -1,21 +1,36 @@
 @import './variables.scss';
 
 .tabs {
-  border: solid 1px black;  
+  //border: solid 1px black;  
 }
 .app_tabs {
+    display: flex;
+    justify-content: center;
     padding: 10px;
-    color: #fff;
-    background: rgb(83, 69, 69);
+    color: $col_light;
+    //background: rgb(83, 69, 69);
 }
 .tab {
+    position: relative;
     padding: 10px 20px;
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 24px;
+    color: $col_light;
+    text-align: center;
+    //border: solid 1px #fff;
+
+    &:hover {
+        .icon {
+            color: $col_dark;
+        }
+        h4 {
+            color: $col_dark;
+        }
+    }
 }
+
 .tabpanel {
     padding: 40px;
-    color: #fff;
-    background: grey;
-    border: solid 1px blue;
+    font-size: 22px;
+    //border: solid 1px blue;
 }

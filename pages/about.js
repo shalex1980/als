@@ -5,8 +5,17 @@ const About = () => {
        <section className={styles.about}>
           <div className="container">
             <h3 className="title">ABOUT US</h3>
-            <p>With teams and capabilities spanning the entire Amazon retail ecosystem, Netrush removes the need for brands to work with multiple agencies, offering a scalable, fully integrated suite of services that work together seamlessly.</p>
-            <p>The result is a partnership that gives your brand the infrastructure, technology, and proven strategies to reach customers and drive consistent growth. Working with a community of committed brands gives us access to data, resources, and experiences crucial for learning and testing – allowing us to invest ahead of change.</p>
+            <p>Our company has 3 years experience on the USA market.
+  We specialize in creating additional sales and increasing
+conversions through listing optimizations across multiple platforms.
+Our in-house staff has experience in professional product photography, 
+photo editing, and writing copy that converts.</p>
+            <p>Recent events show how rapidly everything is changing in the world of e-commerce.
+And what worked a year ago does not bring the desired result at present.
+We carefully monitor new changes in e-commerce and try to accept them in our work.</p>
+<p>We love to grow, develop and win.
+We like to build trusting relationships with our clients.
+We don't want to be just consumers and only seek benefits, but we want to change this world for the better.</p>
           </div>
        </section>
     )

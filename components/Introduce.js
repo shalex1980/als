@@ -1,18 +1,31 @@
+import Image from 'next/image'
 import styles from '../styles/Introduce.module.scss'
 
 const Introduce = () => {
     return(
         <section className={styles.introduce}>
           <div className="container">
-            <h3 className="title">Few words about us</h3>
-            <p>
-            With teams and capabilities spanning the entire Amazon 
-            retail ecosystem, Netrush removes the need for brands to work with multiple agencies, offering a scalable, fully integrated suite of services that work together seamlessly.
-            </p>
-            <p>
-            The result is a partnership that gives your brand the infrastructure, technology, and proven strategies to reach 
-            customers and drive consistent growth. Working with a community of committed brands gives us access to data, resources, and experiences crucial for learning and testing – allowing us to invest ahead of change.
-            </p>
+            
+            <section className={styles.success}>
+              <article>
+                <h3 className="title">What is success based on?</h3>
+                <p className={styles.sub_title}>
+                  We believe that success is made up of small parts done right.
+                  We are attentive to the little things.
+                </p> 
+              </article>
+              <article>
+                <Image 
+                  src="/images/kubik_cartoon.jpeg"
+                  width={660}
+                  height={440}
+                  className={styles.img}
+                />
+              </article>
+              
+            </section>
+            
+            
           </div>   
         </section>
     )

@@ -1,10 +1,15 @@
 import styles from '../../styles/Tabs.module.scss'
 
 const TabPanel = (props) => {
+    const { index, actTab } = props
+
     return (
-      <article className={styles.tabpanel}>
+      <div style={{'display': `${index === actTab ? '' : 'none'}`}}>
+        <article className={styles.tabpanel}>
           {props.children}
-      </article>
+        </article>
+      </div>
+      
     )
 }
 
