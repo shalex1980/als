@@ -1,8 +1,5 @@
 @import './variables.scss';
 
-.tabs {
-  //border: solid 1px black;  
-}
 .app_tabs {
     display: flex;
     justify-content: center;
@@ -10,14 +7,22 @@
     color: $col_light;
     //background: rgb(83, 69, 69);
 }
+.icon {
+    width: 40px;
+    height: 40px;
+}
 .tab {
     position: relative;
     padding: 10px 20px;
     margin-right: 20px;
-    font-size: 24px;
+    
     color: $col_light;
     text-align: center;
     //border: solid 1px #fff;
+    h4 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
 
     &:hover {
         .icon {
@@ -32,5 +37,21 @@
 .tabpanel {
     padding: 40px;
     font-size: 22px;
-    //border: solid 1px blue;
+}
+.tabpanel_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.tabpanel_tx {
+    width: 55%;
+    h4 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.2rem;
+        letter-spacing: 3px;
+    }
+}
+.tabpanel_img {
+    width: 30%;
 }

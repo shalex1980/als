@@ -1,6 +1,7 @@
 @import './variables.scss';
 
 .contact {
+    min-height: calc(100vh - 100px);
     background: $bg_dark;
     color: $col_light;
 }

@@ -4,4 +4,17 @@
     min-height: calc(100vh - 100px);
     background: $bg_dark;
     color: $col_light;
+    
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_tx {
+        width: 55%;
+    }
+
+    &_img {
+        width: 30%;
+    }
 }

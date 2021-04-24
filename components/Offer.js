@@ -1,4 +1,5 @@
 import OfferArticle from './OfferArticle'
+import { AiFillCaretDown } from "react-icons/ai"
 import styles from '../styles/Offer.module.scss'
 import offer from '../data/offer.json'
 
@@ -9,7 +10,7 @@ const Offer = () => {
           <h3 className="title">What We Offer</h3>
           <section className={styles.container}>
              <article className={styles.offer_article}>
-              <h4 className="subtitle">Brand Service</h4>
+              <h4 className={styles.title}>Brand Service <AiFillCaretDown className={styles.icon} /></h4>
               <ul className={styles.offer_list}>
                 <li>Brand Protection</li>
                 <li>Brand Presentation</li>
@@ -18,7 +19,7 @@ const Offer = () => {
               </ul>
             </article>
             <article className={styles.offer_article}>
-              <h4 className="subtitle">Ads & Promotion</h4>
+              <h4 className={styles.title}>Ads & Promotion <AiFillCaretDown className={styles.icon}/></h4>
               <ul className={styles.offer_list}>
                 <li> Amazon Advertise</li>
                 <li> Sponsored Product</li>
@@ -27,7 +28,7 @@ const Offer = () => {
              
             </article>
             <article className={styles.offer_article}>
-              <h4 className="subtitle">Analyse & Improve</h4>
+              <h4 className={styles.title}>Analyse & Improve <AiFillCaretDown className={styles.icon}/></h4>
               <ul className={styles.offer_list}>
                 <li>Utilize third-party software to analyze</li>
                 <li>Adding new services</li>

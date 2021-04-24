@@ -72,7 +72,16 @@ Services :
 
 5. LOGISTIC
     //Using third-party software and our probe we forecast essential quantity goods.
-    Using third-party software and our probe, we forecast essential quantity goods
+  Using third-party software and our probe, we forecast essential quantity goods.
+
+  Постоянное наличие товара очень влияет на восприятие бренда. 
+  Используя Амазон сервисы, сторонние программы 
+  мы прогнозируем необходимое количество товара что бы быть всегда в стоке.
+
+  The constant availability of a product greatly influences the perception of a brand.
+  Using Amazon services, third-party programs, we predict the required quantity of goods to be always in stock.
+  
+
 6. CUSTOMER SUPPORT 
   We cost bridge between our customers and brand owners. 
   We execute Q&A monitoring.
@@ -175,3 +184,10 @@ We love to grow, develop and win.
 We like to build trusting relationships with our clients.
 We don't want to be just consumers and only seek benefits, but we want to change this world for the better.
 
+Наша цель не работать с лучшими, а те с кем мы работаем были лучшими.
+
+Мы не ищем лучших, но с кем мы работаем лучшие.
+
+У нас нет цели работать с лучшими, но те с кем мы работаем лучшие.
+We do not have a goal to work with the best,
+but those we work with are the best.
