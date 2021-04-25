@@ -5,12 +5,10 @@ import styles from '../../styles/Tabs.module.scss'
 
 const Tabs = (props) => {
   const [ indexTab, setIndexTab ] = useState(0)
-  const { services } = props
 
-    console.log(indexTab)
     return (
       <section className={styles.tabs}> 
-        <section className={styles.app_tabs}>
+        <section className={styles.tab_head}>
           <TabHead setIndexTab={setIndexTab} />
         </section>
         <section className={styles.pan_tabs}>
