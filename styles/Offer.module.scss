@@ -36,21 +36,27 @@
     }
     .title {
         position: relative;
-        padding: 20px 0;
-        margin: 20px 0;
-        border: solid 1px #fff;
+        padding: 10px 0;
+        margin: 10px 0;
 
         &:after {
             content: "";
             display: block;
-
         }
     }
     
     .offer_list {
-        display: none;
+        //display: none;
+         height: 0;
+         opacity: 0;
+         overflow: hidden;
+         transition: all 1s;
     }
     .icon {
         display: inline-block;
+        transition: all 1s;
+    }
+    .icon_open {
+        transform: rotate(180deg)
     }
 }

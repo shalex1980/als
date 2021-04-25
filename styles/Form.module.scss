@@ -1,14 +1,14 @@
 @import './variables.scss';
 
 .form {
-    width:500px;
-    
+    width:500px;    
   }
   .input {
     display: block;
     width: 100%;
     height: 40px;
     padding: 10px 15px;
+    box-sizing: border-box;
     border: solid 1px rgb(77, 65, 65);
     border-radius: $inp_rad;
     outline: none;
@@ -18,6 +18,7 @@
     width: 100%;
     min-height: 100px;
     padding: 10px 15px;
+    box-sizing: border-box;
     border: solid 1px rgb(77, 65, 65);
     border-radius: $inp_rad;
     outline: none;
@@ -54,4 +55,11 @@
     font-family: $font_monts;
     font-weight: 500;
     font-style: italic;
+  }
+
+  @media screen and (max-width: 540px) {
+    .form {
+      width: 100%;
+      //outline: solid 1px white;
+    }
   }

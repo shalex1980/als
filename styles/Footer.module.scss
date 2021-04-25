@@ -24,8 +24,21 @@
 
 @media screen and (max-width: 960px) {
   .footer {
-    .contact {
-      display: none;
-    }
+  
+  }
+  .row {
+    display: block;
+  }
+  .logo{
+    margin-top: 0;
+  }
+  .contact {
+    margin-top: 10px;
+    //text-align: left;
+    border-top: solid 1px black;
+  }
+  .copy {
+    color: $col_dark;
+    text-align: right;
   }
 }

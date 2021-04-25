@@ -17,13 +17,65 @@
     justify-content: space-between;
     align-items: center;
   }
+  
+  .burger {
+    display: none;
+  }
 
 @media screen and (max-width: 960px) {
    .header {
      height: 70px;
-     padding: 20px;
-     nav {
+     padding:  0;
+   }
+   .container {
+     display: block;
+     position: relative;
+   }
+   .menu {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      z-index: 100;
+     a {
        display: none;
      }
+     
+    &_activ {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      text-align: right;
+      background: rgba(255, 255, 255, 0.9);
+      a {
+        display: block;
+        font-weight: 700;
+        font-size: 2rem;
+      }
+    }
    }
+   .icon_burg, .icon_x {
+     position: absolute;
+     top: 10px;
+     right: 20px;
+     width: 50px;
+     height: 50px;
+     transition: all 1s;
+   }
+   .burger {
+     display: block;
+     width: 50px;
+     height: 50px;
+     .icon_x {
+       opacity: 0;
+     }
+   }
+   .burger_activ{
+      .icon_burg {
+        opacity: 0
+      }
+      .icon_x {
+        opacity: 100;
+      }
+   }
+   
 }

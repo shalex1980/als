@@ -18,3 +18,19 @@
         width: 30%;
     }
 }
+
+@media screen and (max-width: 960px) {
+    .about {
+        &_wrap {
+            flex-direction: column-reverse;
+        }
+        &_tx {
+            width: 100%;
+        }
+    
+        &_img {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+}
