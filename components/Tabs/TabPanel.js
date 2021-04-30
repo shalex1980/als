@@ -4,7 +4,9 @@ const TabPanel = (props) => {
     const { index, actTab } = props
 
     return (
-      <div style={{'display': `${index === actTab ? '' : 'none'}`}}>
+      <div className={styles.tabpanel_mod} 
+      style={{'display': `${index === actTab ? '' : 'none'}`}}
+      >
         <article className={styles.tabpanel}>
           {props.children}
         </article>

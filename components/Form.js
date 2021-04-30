@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState, createRef } from 'react'
 import styles from '../styles/Form.module.scss'
 
-const fetching = ( obj) => {
-  fetch('http://localhost:3000/api/post',{
+const fetching = async( obj) => {
+  await fetch('http://localhost:3000/api/post',{
     method: 'POST',
     body: JSON.stringify(obj),
     headers: {
@@ -20,49 +20,60 @@ const defaultForm = {
 }
 const Form = () => {
   const [form, setForm] = useState(defaultForm)
+  const [sendValue, setValue] = useState('SEND');
 
   const [empty, setEmpty] = useState({
-    send: false,
     name: "",
     email: "",
     message: "", 
   })
 
+  const handleSendValue  = () => {
+    setValue("DONE")
+    setTimeout(()=> {
+      setValue("SEND")
+    }, 3000)
+  }
+
   const handleChange = (ev) => {
     const target = ev.target
     setForm({...form, [target.name]: target.value})
-    console.log(form)
+    //console.log(form)
   }
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
-    checkEmpty()
-    if(!empty.send) return
-    console.log("SEND")
+    console.log('Sending')
 
-    fetching(form)
-
-    //setForm(defaultForm)
+    if(checkEmpty()) {
+      fetching(form)
+      .then(result => {
+        setForm(defaultForm)
+        setEmpty(defaultForm)
+        handleSendValue()
+        console.log("SEND")
+      })
+    }
+    return false
   }
 
   const checkEmpty = () => {
-    let tmp = {
-      send: true,
-      name: "",
-      email: "",
-      message: "",
-    }
 
     if (form.name.length < 2) {
-      tmp.name = "block"
-      tmp.send = false
+      setEmpty({name: "block"});
+      return false
     } 
+    if(!ValidateEmail(form.email)) {
+      setEmpty({email: "block"});
+      return false
+    }
+
     if (form.message.length < 2 ) {
-      tmp.message = "block"
-      tmp.send = false
+      setEmpty({ message: "block"});
+      return false
     } 
 
-    setEmpty({...empty, ...tmp})
+    return true
   }
 
     return ( 
@@ -82,9 +93,18 @@ const Form = () => {
           <textarea className={styles.textarea} name="message" value={form.message} onChange={handleChange}> </textarea>
           <span className={styles.empty} style={{display:`${empty.message}`}}>Field can`t be empty or less 2 letter</span>
         </article>
-        <input className={styles.send} type="submit" onClick={handleSubmit} value="SEND" /> 
+        <input className={styles.send} type="submit"  value={sendValue} /> 
       </form>
     )
 }
 
 export default Form
+
+function ValidateEmail(mail) 
+{
+ if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))
+  {
+    return (true)
+  } 
+    return (false)
+}

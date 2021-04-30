@@ -16,20 +16,21 @@ app.prepare()
         const server = express()
         server.use(bodyParser.json())
 
-        server.post('/api/post', (req, res) => {
-            console.log("servering send")
-            console.log(req.body)
-            const content = 'Some content!'
+        // server.post('/api/post', (req, res) => {
+        //     console.log("servering send")
+        //     console.log(req.body)
+        //     /*const content = 'Some content!'
 
-            try {
-            const data = fs.writeFileSync('./data/test.txt', content)
-            //file written successfully
-            } catch (err) {
-            console.error(err)
-            }
-        })
+        //     try {
+        //     const data = fs.writeFileSync('./data/test.txt', content)
+        //     //file written successfully
+        //     } catch (err) {
+        //     console.error(err)
+        //     }*/
+        //     //res.send('OK')
+        // })
 
-        //server.post('/api/post', getPost.post)
+        server.post('/api/post', getPost.post())
        
         server.get('*', handler)
 

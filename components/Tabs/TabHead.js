@@ -1,5 +1,4 @@
 import Tab from './Tab'
-import { FaRocket } from 'react-icons/fa'
 import { AiFillThunderbolt, AiFillNotification, AiFillTool, AiFillRocket, AiFillCustomerService, AiFillFolderOpen, AiFillStar, AiFillControl  } from 'react-icons/ai'
 import styles from '../../styles/Tabs.module.scss'
 

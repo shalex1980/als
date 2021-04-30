@@ -4,7 +4,6 @@ import styles from '../styles/Offer.module.scss'
 import offer from '../data/offer.json'
 
 const Offer = () => {
-  console.log(offer)
     return (
       <section className={styles.offer}>
         <div className="container">

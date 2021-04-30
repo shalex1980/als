@@ -1,4 +1,5 @@
 import Form from '../components/Form'
+import { AiOutlinePhone, AiOutlineMail, AiOutlineEnvironment } from "react-icons/ai"
 import company from '../data/company.json'
 import styles from '../styles/Contact.module.scss'
 
@@ -15,8 +16,16 @@ const Contact = () => {
             </article>
             <article className={styles.article_adr}>
               <h4 className={styles.title}>ADDRESS</h4>
-              <p>{company.address}</p>
-              <p>{company.phone}</p>
+              <p>
+                <AiOutlineEnvironment className={styles.icon} />
+                {company.address}</p>
+              <p> 
+                <AiOutlinePhone className={styles.icon} />
+                {company.phone}
+              </p>
+              <p>
+                <AiOutlineMail className={styles.icon}/>
+                {company.email}</p>
             </article>
           </div>
 
