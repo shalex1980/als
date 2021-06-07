@@ -1,4 +1,5 @@
 import { useState, createRef } from 'react'
+import fetch from 'isomorphic-fetch'
 import styles from '../styles/Form.module.scss'
 
 const fetching = async( obj) => {
