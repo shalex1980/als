@@ -16,7 +16,7 @@ app.prepare()
         const server = express()
         server.use(bodyParser.json())
 
-        server.post('/api/post', getPost.post())
+        server.post('http://alispolin.com/api/post', getPost.post())
        
         server.get('*', handler)
 
