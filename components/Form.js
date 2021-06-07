@@ -39,7 +39,6 @@ const Form = () => {
   const handleChange = (ev) => {
     const target = ev.target
     setForm({...form, [target.name]: target.value})
-    //console.log(form)
   }
 
   const handleSubmit = (ev) => {
