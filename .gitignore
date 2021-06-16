@@ -15,6 +15,7 @@
 # production
 /build
 /helper
+/data/Blog
 
 
 #secret

@@ -52,7 +52,9 @@ const Form = () => {
         setEmpty(defaultForm)
         handleSendValue()
         console.log("SEND")
-      })
+      }).catch(er => {
+        console.log(er)
+      }) 
     }
     return false
   }
