@@ -131,6 +131,10 @@ const TabPanels = (props) => {
            <div className={styles.tabpanel_tx}>
              <p>The constant availability of a product greatly influences the perception of a brand.
   Using Amazon services, third-party programs, we predict the required quantity of goods to be always in stock.</p>
+             <h3>Returns, refunds, and exchanges.</h3>
+             <p>We’re here for customers when their orders don’t go as planned.
+             Each step of the customer service process is handled in a way that keeps shoppers happy and your brand integrity intact.
+             </p>
            </div>
            <div className={styles.tabpanel_img}>
             <Image 
