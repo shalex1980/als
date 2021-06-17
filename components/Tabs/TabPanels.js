@@ -8,18 +8,38 @@ const TabPanels = (props) => {
        <TabPanel actTab={props.indexTab} index={0}>
         <article className={styles.tabpanel_wrap}>
            <div className={styles.tabpanel_tx}>
-            <p>We study and analyze all the possibilities of Amazon for product promotion.
-            Based on the data, we are looking for new strategies for promotion.
-             Using Amazon statistics, we create new bundles of popular products to provide convenience and value to buyers.</p>
+              <h4>Analyze</h4>
+              <p>Analyzing and collecting data is an integral part of online marketing.
+                Our team is convinced that using ads without target audience analysis is a waste of money. Before starting an advertising campaign, we need to know our target customer.
+                We use third-party services to analyze and collect data.
+                It helps us set up an advertising campaign correctly
+                and choose the right platform for product promotion.
+                In addition, competitor analysis helps us improve our promotion strategy.
+              </p>
            </div>
            <div className={styles.tabpanel_img}>
             <Image 
-              src="/images/analyze_girl.jpg"
+              src="/images/Analitics_2.webp"
               width={800}
               height={500}
            />
            </div>
         </article>
+        <article className={styles.tabpanel_wrap}>
+          <div className={styles.tabpanel_img}>
+            <Image 
+              src="/images/services/business.jpg"
+              width={800}
+              height={500}
+           />
+           </div>
+           <div className={`${styles.tabpanel_tx} tx_right`}>
+             <h4>Amazon Advertise & Promotion</h4>
+             <p>Amazon Advertise & Promotion tools include some great services (PPC, Sponsored Products, Deals, Coupons, etc...). 
+                Utilize it help us increase traffic to your products in the short-term and also contribute to increased exposure, 
+                traffic, and conversions over the long-term.</p>
+           </div>
+         </article>
        </TabPanel>
        <TabPanel actTab={props.indexTab} index={1}>
          <article className={styles.tabpanel_wrap}>

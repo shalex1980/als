@@ -9,7 +9,7 @@ const TabHead = (props) => {
           setActiv={props.setIndexTab}
         >
           <p><AiFillControl className={styles.icon} /> </p>
-          <h4>ANALIZE  IMPROVING</h4>
+          <h4>ANALYZE & ADVERTISE</h4>
         </Tab> 
         <Tab index={1}
           setActiv={props.setIndexTab}
