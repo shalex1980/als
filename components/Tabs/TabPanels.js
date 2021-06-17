@@ -134,27 +134,43 @@ const TabPanels = (props) => {
        <TabPanel actTab={props.indexTab} index={2}>
         <article className={styles.tabpanel_wrap}>
            <div className={styles.tabpanel_tx}>
-             <p>Amazon Advertise & Promotion tools include some great services (PPC, Sponsored Products, Deals, Coupons, etc...). 
-    Utilize it help us increase traffic to your products in the short-term and also contribute to increased exposure, traffic, and conversions over the long-term.</p>
+             <h4>Online store</h4>
+             <p>Online buying have become important parts of many people's lives. 
+                Virtual stores allow people to shop from the comfort of their homes without the pressure of a salesperson. 
+                Online marketplaces provide a new and more convenient venue for exchanging virtually all types of goods and services.
+                Shopping online is just like heading out to the store. You can often buy the same products online as available in a brick-and-mortar store and can sometimes score better sales.
+                </p>
            </div>
            <div className={styles.tabpanel_img}>
             <Image 
-              src="/images/advertising.jpg"
+              src="/images/responsive.jpg "
               width={800}
               height={500}
            />
+           </div>
+        </article>
+        <article className={styles.tabpanel_wrap}>
+           <div className={styles.tabpanel_img}>
+              <Image 
+                src="/images/coding.jpg "
+                width={800}
+                height={500}
+            />
+            </div>
+           <div className={styles.tabpanel_tx}>
+             <h4>Our store</h4>
+             <p>
+                We create our niche online stores. For creating stores, we use
+                modern development methods such as the mobile version of the store, SEO optimization, UI, etc.</p>
            </div>
         </article>
        </TabPanel>
        <TabPanel actTab={props.indexTab} index={3}>
           <article className={styles.tabpanel_wrap}>
            <div className={styles.tabpanel_tx}>
+             <h4>LOGISTIC</h4>
              <p>The constant availability of a product greatly influences the perception of a brand.
-  Using Amazon services, third-party programs, we predict the required quantity of goods to be always in stock.</p>
-             <h3>Returns, refunds, and exchanges.</h3>
-             <p>We’re here for customers when their orders don’t go as planned.
-             Each step of the customer service process is handled in a way that keeps shoppers happy and your brand integrity intact.
-             </p>
+              Using Amazon services, third-party programs, we predict the required quantity of goods to be always in stock.</p>
            </div>
            <div className={styles.tabpanel_img}>
             <Image 
@@ -164,11 +180,63 @@ const TabPanels = (props) => {
            />
            </div>
         </article>
+        <article className={styles.tabpanel_wrap}>
+            <div className={styles.tabpanel_img}>
+              <Image 
+                src="/images/refund.jpg"
+                width={800}
+                height={500}
+             />
+            </div>
+            <div className={`${styles.tabpanel_tx} tx_right`}>
+             <h3>Returns, refunds, and exchanges.</h3>
+             <p>We’re here for customers when their orders don’t go as planned.
+             Each step of the customer service process is handled in a way that keeps shoppers happy and your brand integrity intact.
+             </p>
+            </div>
+           
+        </article>
        </TabPanel>
        <TabPanel actTab={props.indexTab} index={4}>
-        <article className={styles.tabpanel_wrap}>
+       <article className={styles.tabpanel_wrap}>
            <div className={styles.tabpanel_tx}>
-          <p> We build bridge between our customers and brand owners. 
+             <h4>REVIEWS RATING </h4>
+            <p>
+              "The most effective content is supported and validated by positive reviews."
+              This one is about social proof. Product reviews, both the quantity of them and the quality, are huge
+              influencers on if people are going to buy a product. Many people compare products not only on
+              Amazon is based on reviews, but they will even pull up their phone and check Amazon reviews before they
+              buy the product in store. That is a big thing companies should be aware of! So, reviews are important.
+              We firmly believe that all reviews should be monitored and responded to. This shows a level of care, and
+              a strong review follow-up system can be used to curtail the accumulation of poor reviews.
+              We can further increase the review score by going through and requesting removal for feedback that
+              doesn't follow the Amazon guidelines. Typically, these types of reviews are related to product
+              fulfillment and are a violation of Amazon's review guidelines. 
+            </p>
+            
+          </div>
+          <div className={styles.tabpanel_img}>
+            <Image 
+              src="/images/rating.png"
+              width={800}
+              height={500}
+           />
+           </div>  
+         </article>
+        <article className={styles.tabpanel_wrap}>
+          <div className={styles.tabpanel_img}>
+            <Image 
+              src="/images/customer_support.jpg"
+              width={800}
+              height={500}
+           />
+           </div>
+           <div className={`${styles.tabpanel_tx} tx_right`} >
+             <h4> Customer Support</h4>
+            <p> 
+              Our customer service experts are well versed in creating excellent experiences for customers. 
+              All questions asked by customers — through direct contact or through listings — are quickly answered.
+              We build bridge between our customers and brand owners. 
             </p>
             <ul>
               <li>We execute Q&A monitoring.</li>
@@ -176,18 +244,13 @@ const TabPanels = (props) => {
               <li>Provide email, phone support.</li>
             </ul>
           </div>
-          <div className={styles.tabpanel_img}>
-            <Image 
-              src="/images/customer_support.jpg"
-              width={800}
-              height={500}
-           />
-           </div>  
+           
          </article>
        </TabPanel>
        <TabPanel actTab={props.indexTab} index={5}>
         <article className={styles.tabpanel_wrap}>
            <div className={styles.tabpanel_tx}>
+             <h4>CATALOG MANAGEMENT </h4>
            <p>Working with the brand products on Amazon, we monitor the cleanliness of the product catalog.
             We are tracking and removing duplicate listings,  monitor the compliance of product information.
             Using  Amazon's support, we fix accidental or deliberate violations.
@@ -201,18 +264,33 @@ const TabPanels = (props) => {
            />
            </div>
         </article>
+        <article className={styles.tabpanel_wrap}>
+          <div className={styles.tabpanel_img}>
+            <Image 
+              src="/images/money.jpg"
+              width={800}
+              height={500}
+           />
+           </div>
+           <div className={`${styles.tabpanel_tx} tx_right`}>
+              <h4>MAP POLICY </h4>
+              <p>We provide the insight you need and give you the roadmap to take action against MAP violations on Amazon, 
+              helping your performance and brand integrity across all retailers.</p>
+           </div>
+           
+        </article>
        </TabPanel>
        <TabPanel actTab={props.indexTab} index={6}>
          <p>"The most effective content is supported and validated by positive reviews."
-      This one is about social proof. Product reviews, both the quantity of them and the quality, are huge
-  influencers on if people are going to buy a product. Many people compare products not only on
-  Amazon is based on reviews, but they will even pull up their phone and check Amazon reviews before they
-  buy the product in store. That is a big thing companies should be aware of! So, reviews are important.
-  We firmly believe that all reviews should be monitored and responded to. This shows a level of care, and
-  a strong review follow-up system can be used to curtail the accumulation of poor reviews.
-  We can further increase the review score by going through and requesting removal for feedback that
-  doesn't follow the Amazon guidelines. Typically, these types of reviews are related to product
-  fulfillment and are a violation of Amazon's review guidelines.</p>
+              This one is about social proof. Product reviews, both the quantity of them and the quality, are huge
+          influencers on if people are going to buy a product. Many people compare products not only on
+          Amazon is based on reviews, but they will even pull up their phone and check Amazon reviews before they
+          buy the product in store. That is a big thing companies should be aware of! So, reviews are important.
+          We firmly believe that all reviews should be monitored and responded to. This shows a level of care, and
+          a strong review follow-up system can be used to curtail the accumulation of poor reviews.
+          We can further increase the review score by going through and requesting removal for feedback that
+          doesn't follow the Amazon guidelines. Typically, these types of reviews are related to product
+          fulfillment and are a violation of Amazon's review guidelines.</p>
        </TabPanel>
        <TabPanel actTab={props.indexTab} index={7}>
           <article className={styles.tabpanel_wrap}>

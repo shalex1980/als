@@ -1,5 +1,5 @@
 import Tab from './Tab'
-import { AiFillThunderbolt, AiFillNotification, AiFillTool, AiFillRocket, AiFillCustomerService, AiFillFolderOpen, AiFillStar, AiFillControl  } from 'react-icons/ai'
+import { AiFillThunderbolt, AiFillNotification, AiFillTool, AiFillRocket, AiFillCustomerService, AiFillFolderOpen, AiFillStar, AiFillControl, AiFillSafetyCertificate  } from 'react-icons/ai'
 import styles from '../../styles/Tabs.module.scss'
 
 const TabHead = (props) => {
@@ -21,7 +21,7 @@ const TabHead = (props) => {
           setActiv={props.setIndexTab}
         >
           <p><AiFillNotification className={styles.icon} /> </p>
-          <h4>ADVERTIZIN  PROMOTION</h4>
+          <h4>ONLINE STORE</h4>
         </Tab>
         <Tab index={3}
           setActiv={props.setIndexTab}
@@ -33,24 +33,24 @@ const TabHead = (props) => {
           setActiv={props.setIndexTab}
         >
           <p><AiFillCustomerService className={styles.icon} /> </p>
-          <h4>CUSTOMER SUPPORT</h4>
+          <h4>REVIEWS & SUPPORT</h4>
         </Tab>
         <Tab index={5}
           setActiv={props.setIndexTab}
         >
-          <p><AiFillFolderOpen className={styles.icon} /> </p>
-          <h4>CATALOG MANAGEMENT</h4>
+          <p><AiFillSafetyCertificate className={styles.icon} /> </p>
+          <h4>PROTECTION</h4>
         </Tab>
         <Tab index={6}
           setActiv={props.setIndexTab}
         >
           <p><AiFillStar className={styles.icon} /> </p>
-          <h4>RATING  REVIEWS</h4>
+          <h4> EMPTY</h4>
         </Tab>
         <Tab index={7}
           setActiv={props.setIndexTab}
         ><p><AiFillThunderbolt className={styles.icon} /> </p> 
-          <h4>MAP POLICY</h4>
+          <h4>EMPTY</h4>
         </Tab>
       </>
     )
